@@ -36,7 +36,7 @@ func _on_Ball_body_entered(body):
 	tween = create_tween().set_parallel(true)
 	$Images/Highlight.modulate.a = 1.0
 	tween.tween_property($Images/Highlight, "modulate:a", 0, time_highlight)
-	$Images/Highlight.scale(Vector2(2,2))
+	$Images/Highlight.scale = Vector2(2,2)
 	tween.tween_property($Images/Highlight, "scale", Vector2(1,1), time_highlight_size).set_trans(Tween.TRANS_BOUNCE).set_ease(Tween.EASE_IN)
 	wobble_direction = linear_velocity.orthogonal().normalized()
 	wobble_amplitude = wobble_max
