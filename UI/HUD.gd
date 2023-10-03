@@ -39,7 +39,11 @@ func update_lives():
 	breathe()
 
 func breathe():
-	pass
+	indicator_scale = indicator_scale_target if indicator_scale_target == indicator_scale_start else indicator_scale_start
+	indicator_mod = indicator_mod_target if indicator_mod_target == indicator_mod_start else indicator_mod_start
+	if tween:
+		tween.kill()
+	tween = get_tree().create_tween().set_parallel(true)
 
 func _on_Timer_timeout():
 	Global.update_time(-1)
