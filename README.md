@@ -10,7 +10,13 @@ Move the paddle using the mouse. Help the ball break all the bricks before you r
 
 
 ## Implementation
-
+-Added Space Theme
+-Changed Ball Sprite and made it change on impact
+-Change Paddle sprite and made it change on impact
+-Added Colors to Blocks
+-Added Sparkles to bricks and paddles on impact
+-Added Bouncing Bricks when game initially loads
+-Added Falling and twilring bricks after impact
 Created using [Godot 4.1.1](https://godotengine.org/download)
 
 ## References
